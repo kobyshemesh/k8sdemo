@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: das-boot
+  labels:
+    app: das-boot
+spec:
+  selector:
+    matchLabels:
+      app: das-boot
+  template:
+    metadata:
+      labels:
+        app: das-boot
+    spec:
+      containers:
+      - name: das-boot
+        #image: docker.io/kshamama/das-boot:1
+        image: harbor.costamesa.cf-app.com/demo/das-boot:1 
+        ports:
+        - containerPort: 8080

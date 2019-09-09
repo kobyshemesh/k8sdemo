@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: das-boot
+  labels:
+    app: das-boot
+spec:
+  selector:
+    app: das-boot
+  ports:
+  - port: 8080
+    targetPort: 8080
+  type: LoadBalancer
