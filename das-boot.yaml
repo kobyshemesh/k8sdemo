@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: das-boot
-        #image: docker.io/kshamama/das-boot:1
-        image: harbor.costamesa.cf-app.com/demo/das-boot:1 
+        image: docker.io/kshamama/das-boot:1
+        #image: harbor.costamesa.cf-app.com/demo/das-boot:1 
         ports:
         - containerPort: 8080
