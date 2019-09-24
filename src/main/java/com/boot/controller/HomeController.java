@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomeController {
 	@RequestMapping("/")
 	public String home() {
-		return "This is the best Hello-World app ever";
+		return "Hello HPe Guests! PKS Rules!";
 	}
 
 }

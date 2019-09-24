@@ -10,7 +10,7 @@ public class Error implements ErrorController{
 
     @RequestMapping(value = PATH)
     public String error() {
-        return "This is 404 Return by kshamama amazing application";
+        return "ohhhhhh this is 404! call kshamama@pivotal.io";
     }
 
     @Override
